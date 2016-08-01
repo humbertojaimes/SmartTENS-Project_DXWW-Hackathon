@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Source/Xochipilli.API/Xochipilli.WebAPI/obj
+/Source/Xochipilli.API/Xochipilli.WebAPI/bin
+/Source/Xochipilli.API/packages
+/Source/Xochipilli.Mobile/packages
+/Source/Xochipilli.Mobile/Xochipilli/Xochipilli/bin/Debug
+/Source/Xochipilli.Mobile/Xochipilli/Xochipilli/obj
+/Source/Xochipilli.Mobile/Xochipilli/Xochipilli.Droid/bin/Debug
+/Source/Xochipilli.Mobile/Xochipilli/Xochipilli.Droid/obj
+/Source/Xochipilli.Mobile/Xochipilli/Xochipilli.iOS/bin/iPhoneSimulator/Debug
+/Source/Xochipilli.Mobile/Xochipilli/Xochipilli.iOS/obj

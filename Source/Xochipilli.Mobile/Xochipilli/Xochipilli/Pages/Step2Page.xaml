@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xochipilli"
+             xmlns:conv="clr-namespace:Xochipilli.Converters;assembly=Xochipilli"
+             x:Class="Xochipilli.Pages.Step2Page" Title="Test Participant">
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="Start" Padding="10,10,10,10">
+      <Entry Text="{Binding Bluetooth}" Placeholder="Bluetooth" PlaceholderColor="Gray"></Entry>
+      <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+          <Button Text="Connect" Command="{Binding ConnectCommand}" HorizontalOptions="CenterAndExpand"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+          <Button Text="Stop" Command="{Binding StopCommand}" HorizontalOptions="CenterAndExpand"></Button>
+        </StackLayout>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" Padding="0,50,0,0">
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+          <Button Text="Up" Command="{Binding UpCommand}"></Button>
+          <Button Text="Down" Command="{Binding DownCommand}"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+          <Label Text="Intensity"></Label>
+          <Entry Placeholder="0" PlaceholderColor="Gray" Text="{Binding Intensity}" IsEnabled="False"></Entry>
+          <Label Text="Elapsed time"></Label>
+          <Entry PlaceholderColor="Gray" Text="{Binding ElapsedTime}" IsEnabled="False"></Entry>
+          <Label Text="Max supported"></Label>
+          <Entry PlaceholderColor="Gray" Text="{Binding MaxIntensity}" IsEnabled="False"></Entry>
+        </StackLayout>
+      </StackLayout>
+      <StackLayout Padding="0,30,0,0">
+        <ActivityIndicator IsRunning="{Binding IsRunning}" IsEnabled="True" IsVisible="True" ></ActivityIndicator>
+        <Button Text="Next" HorizontalOptions="CenterAndExpand" Command="{Binding NextPageCommand}" IsEnabled="{Binding IsNextEnabled}"></Button>
+      </StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

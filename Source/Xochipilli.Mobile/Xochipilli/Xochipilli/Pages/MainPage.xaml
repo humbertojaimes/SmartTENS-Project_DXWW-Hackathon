@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xochipilli"
+             xmlns:conv="clr-namespace:Xochipilli.Converters;assembly=Xochipilli"
+             x:Class="Xochipilli.Pages.MainPage" Title="Xochipilli">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <conv:IntToImageSettingsConverter x:Key="intToImageSettings"></conv:IntToImageSettingsConverter>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Content>
+    <TableView>
+      <TableRoot>
+        <!--<TableSection>
+          <ImageCell Text="Send Test Participant" ImageSource="{Binding Converter={StaticResource intToImageSettings}, ConverterParameter=1}" Command="{Binding SendTestDataCommand}" />
+        </TableSection>
+        <TableSection>
+          <ImageCell Text="Take Photo" ImageSource="{Binding Converter={StaticResource intToImageSettings}, ConverterParameter=1}" Command="{Binding TakePhotoCommand}" />
+        </TableSection>-->
+        <TableSection>
+          <ImageCell Text="Begin Test" ImageSource="{Binding Converter={StaticResource intToImageSettings}, ConverterParameter=1}" Command="{Binding Step1Command}" />
+        </TableSection>
+      </TableRoot>
+    </TableView>
+  </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xochipilli"
+             xmlns:conv="clr-namespace:Xochipilli.Converters;assembly=Xochipilli"
+             x:Class="Xochipilli.Pages.Step3Page" Title="Test Participant">
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="Start" Padding="10,10,10,10">
+      <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Padding="0,50,0,0">
+        <Label FontSize="24" FontFamily="Bold" Text="Thanks for participate!"></Label>
+      </StackLayout>
+      <StackLayout Padding="0,100,0,0">
+        <Button Text="Finish" HorizontalOptions="CenterAndExpand" Command="{Binding NextPageCommand}"></Button>
+      </StackLayout>     
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
